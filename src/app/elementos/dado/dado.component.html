@@ -1,9 +1,10 @@
 <h1>JUEGO DE DADOS</h1>
 
 <div id="btn" class="boton">
-    <button id="lanzar">Lanzar Dado</button>
+    <p #reset>{{aleatorio}}</p>
+    <button id="lanzar" (click)="lanzar()">Lanzar Dado</button>
 
-    <button id="reset">Reiniciar</button>
+    <button #reset id="reset" (click)="reiniciar()">Reiniciar</button>
     <div id="info"></div>
 </div>
 
